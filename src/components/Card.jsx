@@ -9,11 +9,11 @@ const Card = () => {
   return (
     <div className="wrapper">
       <div
-        className="card__container"
+        className="card__container sedan"
         style={{
           borderTopLeftRadius: 10,
-          borderTopRightRadius: 10,
-          borderBottomLeftRadius: 0,
+          borderTopRightRadius: 0,
+          borderBottomLeftRadius: 10,
           borderBottomRightRadius: 0,
         }}
       >
@@ -35,7 +35,7 @@ const Card = () => {
         </div>
       </div>
       <div
-        className="card__container"
+        className="card__container suv"
         style={{ backgroundColor: "#006971", borderRadius: 0 }}
       >
         <div className="card__icon">
@@ -56,12 +56,12 @@ const Card = () => {
         </div>
       </div>
       <div
-        className="card__container"
+        className="card__container luxury"
         style={{
           backgroundColor: "#004140",
-          borderTopRightRadius: 0,
+          borderTopRightRadius: 10,
           borderBottomRightRadius: 10,
-          borderBottomLeftRadius: 10,
+          borderBottomLeftRadius: 0,
           borderTopLeftRadius: 0,
         }}
       >
