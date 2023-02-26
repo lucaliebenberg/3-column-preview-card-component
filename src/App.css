@@ -2,6 +2,13 @@
 
 /* Big Shoulders Display */
 /* Lexend Deca */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto
+}
 
 #root {
   max-width: 1280px;
