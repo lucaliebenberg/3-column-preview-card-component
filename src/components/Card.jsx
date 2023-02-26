@@ -8,7 +8,15 @@ import Icon3 from "../assets/images/icon-luxury.svg";
 const Card = () => {
   return (
     <div className="wrapper">
-      <div className="card__container">
+      <div
+        className="card__container"
+        style={{
+          borderTopLeftRadius: 10,
+          borderTopRightRadius: 10,
+          borderBottomLeftRadius: 0,
+          borderBottomRightRadius: 0,
+        }}
+      >
         <div className="card__icon">
           <img src={Icon1} alt="Sedans" className="icon" />
         </div>
@@ -51,9 +59,9 @@ const Card = () => {
         className="card__container"
         style={{
           backgroundColor: "#004140",
-          borderTopRightRadius: 10,
+          borderTopRightRadius: 0,
           borderBottomRightRadius: 10,
-          borderBottomLeftRadius: 0,
+          borderBottomLeftRadius: 10,
           borderTopLeftRadius: 0,
         }}
       >

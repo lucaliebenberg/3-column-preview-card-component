@@ -114,3 +114,15 @@ a {
   font-size: 15px;
   font-family: 'Lexend Deca';
 }
+
+/* Media Queries */
+@media screen and (max-width: 350px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .card__container {
+    margin-right: 1rem; 
+  }
+}
