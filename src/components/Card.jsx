@@ -7,7 +7,7 @@ import Icon3 from "../assets/images/icon-luxury.svg";
 
 const Card = () => {
   return (
-    <div>
+    <div className="wrapper">
       <div className="card__container">
         <div className="card__icon">
           <img src={Icon1} alt="Sedans" className="icon" />
@@ -21,7 +21,55 @@ const Card = () => {
           </p>
         </div>
         <div className="card__bottom">
-          <a href="#" className="card__link">
+          <a href="#" className="card__link1">
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div
+        className="card__container"
+        style={{ backgroundColor: "#006971", borderRadius: 0 }}
+      >
+        <div className="card__icon">
+          <img src={Icon2} alt="Sedans" className="icon" />
+        </div>
+
+        <div className="card__top">
+          <h1 className="card__title"> SUVs</h1>
+          <p className="card__para">
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+        </div>
+        <div className="card__bottom">
+          <a href="#" className="card__link2">
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div
+        className="card__container"
+        style={{
+          backgroundColor: "#004140",
+          borderTopRightRadius: 10,
+          borderBottomRightRadius: 10,
+          borderBottomLeftRadius: 0,
+          borderTopLeftRadius: 0,
+        }}
+      >
+        <div className="card__icon">
+          <img src={Icon3} alt="Sedans" className="icon" />
+        </div>
+
+        <div className="card__top">
+          <h1 className="card__title">Luxury</h1>
+          <p className="card__para">
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+        </div>
+        <div className="card__bottom">
+          <a href="#" className="card__link3">
             Learn more
           </a>
         </div>
