@@ -6,15 +6,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0 auto
-}
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  min-height: 100vh;
+  margin: auto
 }
 
 .wrapper {
@@ -133,23 +126,50 @@ a {
 }
 
 /* Media Queries */
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 350px) {
   .wrapper {
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
-    height: 100%;
+    margin: 1rem auto;
+    height: auto;
   }
   .card__container {
-    margin-right: 1rem; 
+    /* margin-right: 1rem;  */
   }
   .sedan {
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0px 0px;
   }
   .suv {
-    border-radius: 0 0 0 0;
+    border-radius: 0;
   }
   .luxury {
     border-radius: 0 0 10px 10px;
+  }
+}
+/* 
+@media screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem auto;
+    height: auto;
+  }
+} */
+
+@media screen and (min-width: 1025px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem auto;
+    height: auto;
+  }
+  .sedan {
+    border-radius: 10px 0 0 10px;
+  }
+  .suv {
+    border-radius: 0;
+  }
+  .luxury {
+    border-radius: 0 10px 10px 0;
   }
 }
